@@ -1,2 +1,2 @@
 # AndroidAudio
-//TODO add sliders for audio control
+//TODO add sliders for audio and seek control ::done::
