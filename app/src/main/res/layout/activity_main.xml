@@ -13,8 +13,10 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="142dp"
         android:layout_marginEnd="162dp"
+        android:layout_marginBottom="16dp"
         android:onClick="play"
         android:text="Play"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,11 +26,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="162dp"
+        android:layout_marginBottom="66dp"
         android:onClick="pause"
         android:text="Pause"
+        app:layout_constraintBottom_toTopOf="@+id/volumeSeekBar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <SeekBar
+        android:id="@+id/volumeSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="397dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <SeekBar
+        android:id="@+id/scrubSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
